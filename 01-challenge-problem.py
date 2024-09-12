@@ -1,7 +1,7 @@
 class Point:
-    def __init__(self, coordX, coordY):
-        self.coordX = coordX
-        self.coordY = coordY
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
 
 
 class Rectangle:
@@ -14,10 +14,10 @@ class Rectangle:
         return self.width * self.height
 
     def print_coordinates(self):
-        top_right = self.starting_point.coordX + self.width
-        bottom_left = self.starting_point.coordY + self.height
-        print('Starting Point (X)): ' + str(self.starting_point.coordX))
-        print('Starting Point (Y)): ' + str(self.starting_point.coordY))
+        top_right = self.starting_point.x + self.width
+        bottom_left = self.starting_point.y + self.height
+        print('Starting Point (X)): ' + str(self.starting_point.x))
+        print('Starting Point (Y)): ' + str(self.starting_point.y))
         print('End Point X-Axis (Top Right): ' + str(top_right))
         print('End Point Y-Axis (Bottom Left): ' + str(bottom_left))
 
@@ -29,7 +29,7 @@ def build_stuff():
     return rect
 
 
-my_rect = build_stuff()
+my_rectangle = build_stuff()
 
-print(my_rect.area())
-my_rect.print_coordinates()
+print(my_rectangle.area())
+my_rectangle.print_coordinates()
