@@ -24,12 +24,12 @@ class Rectangle:
 
 def build_rectangle():
     starting_point = Point(50, 100)
-    rect = Rectangle(starting_point, 90, 10)
+    rectangle = Rectangle(starting_point, 90, 10)
 
-    return rect
+    return rectangle
 
 
-my_rectangle = build_rectangle()
+rectangle = build_rectangle()
 
-print(my_rectangle.area())
-my_rectangle.print_coordinates()
+print(rectangle.area())
+rectangle.print_coordinates()
