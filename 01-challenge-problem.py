@@ -22,14 +22,14 @@ class Rectangle:
         print('End Point Y-Axis (Bottom Left): ' + str(bottom_left))
 
 
-def build_stuff():
+def build_rectangle():
     starting_point = Point(50, 100)
     rect = Rectangle(starting_point, 90, 10)
 
     return rect
 
 
-my_rectangle = build_stuff()
+my_rectangle = build_rectangle()
 
 print(my_rectangle.area())
 my_rectangle.print_coordinates()
